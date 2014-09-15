@@ -58,7 +58,7 @@ var pois = L.geoJson(null, {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Name</th><td>" + feature.properties.Place + "</td></tr>" + "<tr><th>Address</th><td>" + feature.properties.Address + "</td></tr>" + "<tr><th>Phone</th><td>" + feature.properties.Phone + "</td></tr>" + "<tr><th>Website</th><td><a class='url-break' href='" + feature.properties.URL + "' target='_blank'>" + feature.properties.URL + "</a></td></tr>" + "<tr><th>Hours</th><td>" + feature.properties.Hours + "</td></tr>" + "<tr><th>Cost</th><td>" + feature.properties.Cost + "</td></tr>" + "<table>";
       layer.on({
         click: function (e) {
-          $("#feature-title").html(feature.properties.Place);
+          $("#feature-title").html("<i class='fa fa-fire-extinguisher fa-border' style='color: orange'></i>&nbsp;" + feature.properties.Place);
           $("#feature-info").html(content);
           $("#featureModal").modal("show");
           highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {
@@ -69,7 +69,7 @@ var pois = L.geoJson(null, {
           }));
         }
       });
-      $("#feature-list tbody").append('<tr style="cursor: pointer;"><td style="vertical-align: middle;"><i class="fa fa-fire-extinguisher" style="color: orange"></i></td><td class="feature-name" id="'+L.stamp(layer)+'">'+layer.feature.properties.Place+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+      $("#feature-list tbody").append('<tr style="cursor: pointer;"><td style="vertical-align: middle;"><i class="fa fa-fire-extinguisher" style="color: orange"></i>&nbsp;</td><td class="feature-name" id="'+L.stamp(layer)+'">'+layer.feature.properties.Place+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       poiSearch.push({
         name: layer.feature.properties.Place,
         address: layer.feature.properties.Address,
@@ -177,7 +177,7 @@ var baseLayers = {
 
 var groupedOverlays = {
   "Points of Interest": {
-    "<i class='fa fa-fire-extinguisher' style='color: orange'></i>CO2 Refills": poiLayer
+    "<i class='fa fa-fire-extinguisher' style='color: orange'></i>&nbsp;CO2 Refills": poiLayer
   }
 };
 

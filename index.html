@@ -34,7 +34,7 @@
           <a href="#" class="navbar-icon pull-right visible-xs" onclick="$('.navbar-collapse').collapse('toggle'); return false;"><i class="fa fa-bars fa-lg" style="color: white"></i></a>
           <a href="#" class="navbar-icon pull-right visible-xs" onclick="$('#sidebar').toggle(); map.invalidateSize(); return false;"><i class="fa fa-fire-extinguisher fa-lg" style="color: white"></i></a>
         </div>
-        <a class="navbar-brand" href="#">CO2 Refills</a>
+        <a class="navbar-brand" href="#"><i class="fa fa-fire-extinguisher" style="color: orange"></i>&nbsp;&nbsp;CO2 Refills</a>
       </div>
       <div class="navbar-collapse collapse">
         <form class="navbar-form navbar-right" role="search">
@@ -56,7 +56,7 @@
         <div class="sidebar-wrapper">
           <div class="panel panel-default" style="margin: 0px; border: none; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none;" id="features">
             <div class="panel-heading">
-              <h3 class="panel-title">CO2 Refills
+              <h3 class="panel-title">Locations
               <button type="button" class="btn btn-xs btn-default pull-right" style="margin-top: -2px;" onclick="$('#sidebar').hide(); map.invalidateSize();"><i class="fa fa-chevron-left"></i></button></h3>
             </div>
             <div class="panel-body">
@@ -105,23 +105,23 @@
         <div class="modal-content">
           <div class="modal-header">
             <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">CO2 Refill Locations</h4>
+            <h4 class="modal-title"><i class="fa fa-fire-extinguisher fa-border pull-left" style="color: orange"></i>&nbsp;&nbsp;CO2 Refill Locations</h4>
           </div>
           <div class="modal-body">
             <ul class="nav nav-tabs" id="aboutTabs">
-              <li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the map</a></li>
+              <li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About this map</a></li>
               <li><a href="#contact" data-toggle="tab"><i class="fa fa-envelope"></i>&nbsp;Contact us</a></li>
               <li><a href="#disclaimer" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i>&nbsp;Metadata <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#co2-tab" data-toggle="tab">CO2 Refill Locations</a></li>
+                  <li><a href="#co2-tab" data-toggle="tab"><i class="fa fa-fire-extinguisher fa-border" style="color: orange"></i>&nbsp;CO2 Refill Locations</a></li>
                 </ul>
               </li>
             </ul>
             <div class="tab-content" id="aboutTabsContent" style="padding-top: 10px;">
               <div class="tab-pane fade active in" id="about">
-                <p>This map of Boston area CO2 tank refill locations is brought to you by the Boston Wort Processors.</p>
+                <p>This map of Boston area CO2 tank refill locations is brought to you by the <a href="http://wort.org">Boston Wort Processors</a>.  If you would like to contribute additional locations, they can be added <a href="https://docs.google.com/spreadsheets/d/1tK9U2keizinvcT7Rkqqt1tgL42OR3aRHGqtg_qzrJIc/edit#gid=0">here</a>.</p>
               </div>
               <div id="disclaimer" class="tab-pane fade text-danger">
                 <p>The data provided on this site is for informational and planning purposes only.</p>
@@ -131,7 +131,7 @@
                 <a href="mailto:officers@wort.org">officers@wort.org</a>
               </div>
               <div class="tab-pane fade" id="co2-tab">
-                <p>All data provided by Boston Wort Processor club members.</p>
+                <p>All data provided by <a href="http://wort.org">Boston Wort Processor</a> club members.</p>
               </div>
             </div>
           </div>
