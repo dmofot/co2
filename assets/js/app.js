@@ -69,7 +69,7 @@ var pois = L.geoJson(null, {
           }));
         }
       });
-      $("#feature-list tbody").append('<tr style="cursor: pointer;"><td style="vertical-align: middle;"><i class="fa fa-fire-extinguisher" style="color: orange"></i></td><td class="feature-name" id="'+L.stamp(layer)+'">'+layer.feature.properties.Place+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
+      $("#feature-list tbody").append('<tr style="cursor: pointer;"><td style="vertical-align: middle;"><i class="fa fa-fire-extinguisher" style="color: orange"></i>&nbsp;</td><td class="feature-name" id="'+L.stamp(layer)+'">'+layer.feature.properties.Place+'</td><td style="vertical-align: middle;"><i class="fa fa-chevron-right pull-right"></i></td></tr>');
       poiSearch.push({
         name: layer.feature.properties.Place,
         address: layer.feature.properties.Address,
@@ -177,7 +177,7 @@ var baseLayers = {
 
 var groupedOverlays = {
   "Points of Interest": {
-    "<i class='fa fa-fire-extinguisher' style='color: orange'></i>CO2 Refills": poiLayer
+    "<i class='fa fa-fire-extinguisher' style='color: orange'></i>&nbsp;CO2 Refills": poiLayer
   }
 };
 
